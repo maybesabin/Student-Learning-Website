@@ -12,6 +12,14 @@
         .active {
             background-color: #e2e8f0;
         }
+
+        *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          scroll-behavior: smooth;
+        }
+        
     </style>
 
     <!--Font-Poppins-->
@@ -21,7 +29,7 @@
 </head>
 
 <body style="background-image: url(assets/bg.png); font-family: Poppins; background-repeat: no-repeat; background-position: center; background-size: cover; height: 100vh;">
-    <nav class="bg-white shadow-lg sticky">
+    <nav class="bg-white shadow-lg fixed top-0 w-[100%]">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center py-4">
               
@@ -33,15 +41,15 @@
                 
                 <!-- Navbar links -->
                 <div class="hidden md:flex gap-10 font-semibold">
-                    <a href="#" class="text-gray-600 hover:text-gray-800 transition duration-300">Home</a>
-                    <a href="#" class="text-gray-600 hover:text-gray-800 transition duration-300">About</a>
-                    <a href="#" class="text-gray-600 hover:text-gray-800 transition duration-300">Contact</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-500 transition duration-300">Home</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-500 transition duration-300">About</a>
+                    <a href="#" class="text-gray-600 hover:text-blue-500 transition duration-300">Contact</a>
                 </div>
 
                 <!-- Log In and Sign Up buttons -->
                 <div class="flex items-center">
-                    <button class="bg-blue-500 text-white px-4 py-2 rounded-md mr-4">Log In</button>
-                    <button class="bg-green-500 text-white px-4 py-2 rounded-md">Sign Up</button>
+                    <button class="bg-blue-500 text-white px-4 py-2 rounded-md mr-4 hover:bg-blue-700 transition duration-300">Log In</button>
+                    <button class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition duration-300">Sign Up</button>
                 </div>
 
                 <!-- Mobile menu button -->
@@ -55,45 +63,68 @@
             </div>
 
             <!-- Mobile menu -->
-            <div id="mobile-menu" class="md:hidden hidden">
-                <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">Home</a>
-                <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">About</a>
-                <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-200">Contact</a>
+            <div id="mobile-menu" class="md:hidden hidden z-999">
+                <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:text-blue-500">Home</a>
+                <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:text-blue-500">About</a>
+                <a href="#" class="block py-2 px-4 text-sm text-gray-700 hover:text-blue-500">Contact</a>
             </div>
         </div>
       </nav>
 
       <!--Hero Section-->
-      <section class="flex flex-col items-center justify-center gap-10 h-[90vh]">
-        <h1 class="text-center text-6xl font-bold">Your Own<br> <span class="text-blue-700">Learning</span> Space!</h1>
+      <section class="flex flex-col items-center justify-center gap-10">
+        <h1 class="text-center text-6xl pt-[10rem] font-bold">Your Own<br> <span class="text-blue-700">Learning</span> Space!</h1>
         <button class="bg-blue-600 rounded-xl p-3 text-[17px] text-white hover:bg-blue-700" >Start Learning</button>
 
         <!--Video & Intro-->
         <div class="flex justify-center items-center gap-4">
 
           <!--About Us-->
-          <div class="flex flex-col lg:flex-row gap-4">
-            <div class="md:flex flex-col gap-4 ">
+          <div class="flex flex-col justify-center gap-10 items-center lg:flex-row lg:gap-4 lg:items-stretch">  
+            <div class="md:flex flex-col lg:gap-2">
               <h2 class="rounded-xl px-2 py-1 w-[22%] bg-gray-200">Who are we?</h2>
               <iframe class="rounded-xl" width="560" height="300" src="https://www.youtube.com/embed/viHILXVY_eU?si=UCPG2rqvXhTAedIP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
   
             <!--Entrance Prep-->
-            <div class="bg-gray-100 text-center w-[400px] flex flex-col gap-10">
-              <h3 class="font-semibold text-">
+            <div class="bg-gray-100 text-center rounded-[25px] w-[400px] flex flex-col items-center justify-center gap-10">
+              <h3 class="font-semibold text-[17px] pt-4 text-blue-600">
                 Revolutionizing Learning with <br> E-Learning Website
               </h3>
               <p>
                 Welcome to our e-learning platform, where education meets innovation.We are passionate about transforming traditional learning methods into dynamic digital experiences.
               </p>
-              <button>See More</button>
+              <button class="bg-blue-500 text-white px-4 py-2 rounded-md w-[130px] lg:mb-0 mb-4">See More</button>
             </div>
           </div>
 
         </div>
       </section>
+      
+      <!--Banner section-->
+      <div class="bg-[#091146] mt-[5rem] lg:mt-[15rem] h-[150px] w-[100%] text-white flex justify-evenly items-center text-left">
+        <div>
+          <h1 class="text-2xl lg:text-5xl font-semibold">15+</h1>
+          <p class="text-xl font-extralight">Agendas</p>
+        </div>
+        <div>
+          <h1 class="text-2xl lg:text-5xl font-semibold">1000+</h1>
+          <p class="text-xl font-extralight">Students</p>
+        </div>
+        <div>
+          <h1 class="text-2xl lg:text-5xl font-semibold">50+</h1>
+          <p class="text-xl font-extralight">Instructors</p>
+        </div>
+        <div>
+          <h1 class="text-2xl lg:text-5xl font-semibold">200+</h1>
+          <p class="text-xl font-extralight">Videos</p>
+        </div>
+      </div>
 
+      <!--Why E-learning? -->
+      <section class="h-[100vh]">
 
+      </section>
     <script src="index.js"></script>
 </body>
 </html>
