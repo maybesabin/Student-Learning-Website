@@ -72,7 +72,7 @@
       </nav>
 
       <!--Hero Section-->
-      <section class="flex flex-col items-center justify-center gap-10">
+      <section class="flex flex-col items-center justify-center gap-10 h-[100vh]">
         <h1 class="text-center text-6xl pt-[10rem] font-bold">Your Own<br> <span class="text-blue-700">Learning</span> Space!</h1>
         <button class="bg-blue-600 rounded-xl p-3 text-[17px] text-white hover:bg-blue-700" >Start Learning</button>
 
@@ -82,12 +82,12 @@
           <!--About Us-->
           <div class="flex flex-col justify-center gap-10 items-center lg:flex-row lg:gap-4 lg:items-stretch">  
             <div class="md:flex flex-col lg:gap-2">
-              <h2 class="rounded-xl px-2 py-1 w-[22%] bg-gray-200">Who are we?</h2>
-              <iframe class="rounded-xl" width="560" height="300" src="https://www.youtube.com/embed/viHILXVY_eU?si=UCPG2rqvXhTAedIP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <h2 class="rounded-xl px-2 py-1 w-[22%] lg:mb-0 md:flex lg:flex hidden mb-2 bg-gray-200">Who are we?</h2>
+              <iframe class="rounded-xl lg:flex md:flex hidden" width="560" height="300" src="https://www.youtube.com/embed/viHILXVY_eU?si=UCPG2rqvXhTAedIP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
   
             <!--Entrance Prep-->
-            <div class="bg-gray-100 text-center rounded-[25px] w-[400px] flex flex-col items-center justify-center gap-10">
+            <div class="bg-gray-100 text-center rounded-[25px] w-[400px] lg:flex md:flex flex-col items-center justify-center gap-10 hidden">
               <h3 class="font-semibold text-[17px] pt-4 text-blue-600">
                 Revolutionizing Learning with <br> E-Learning Website
               </h3>
@@ -121,10 +121,123 @@
         </div>
       </div>
 
-      <!--Why E-learning? -->
-      <section class="h-[100vh]">
+      <!--Why choose us?-->
+      <section class="lg:py-[10rem]">
+        <h1 class="pb-[5rem] text-center font-bold text-5xl text-[#091146]"><span class="text-blue-600">Why</span> Choose Us?</h1>
+        
+        <!--Icon Div's-->
+        <div class="flex  justify-center items-center lg:gap-7">
+          <!--Card 1-->
+          <div class="flex flex-col justify-center items-center gap-4">
+            <div style="border: 1px solid #f9fafc; box-shadow: 1px 1px 5px black;" class="rounded-[50%] p-4" >
+              <img width="80px" class="p-2" src="assets/question.png" alt="">
+            </div>
+            <h1 class="font-semibold">Question Solving & Solutions</h1>
+            <p class="w-[300px] text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatum expedita ex quisquam
+          </div>
+
+          <!--Card 2-->
+          <div class="flex flex-col justify-center items-center gap-4">
+            <div style="border: 1px solid #f9fafc; box-shadow: 1px 1px 5px black;" class=" rounded-[50%] p-4" >
+              <img width="80px" class="p-2" src="assets/test.png" alt="">
+            </div>
+            <h1 class="font-semibold">Chapter-Wise Tests</h1>
+            <p class="w-[300px] text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatum expedita ex quisquam 
+          </div>
+
+          <!--Card 3-->
+          <div class="flex flex-col justify-center items-center gap-4">
+            <div style="border: 1px solid #f9fafc; box-shadow: 1px 1px 5px black;" class="rounded-[50%] p-4" >
+              <img width="80px" class="p-2" src="assets/notes.png" alt="">
+            </div>
+            <h1 class="font-semibold">Topper's Notes</h1>
+            <p class="w-[300px] text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatum expedita ex quisquam 
+            </p>
+          </div>
+
+          <!--Card 4-->
+          <div class="flex flex-col justify-center items-center gap-4">
+            <div style="border: 1px solid #f9fafc; box-shadow: 1px 1px 5px black;" class="rounded-[50%] p-4" >
+              <img width="80px" class="p-2" src="assets/user friendly.png" alt="">
+            </div>
+            <h1 class="font-semibold">Learning Environment</h1>
+            <p class="w-[300px] text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptatum expedita ex quisquam
+            </p>
+          </div>
+        </div>
+      
+      </section>
+
+
+
+      <!--Messages from our team-->
+      <section class="p-10 lg:p-0 flex flex-col items-center justify-center lg:pt-[10rem]">
+        <h1 class="pb-[7rem] text-center font-bold text-5xl text-[#091146]"><span class="text-blue-600">Messages</span> From Our Team</h1>
+        
+        <!--Cards-->
+        <div class="max-w-screen-lg grid grid-cols-1 sm:grid-cols-3 lg:gap-8 gap-10">
+          
+          <!-- Card 1 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img src="assets/person1.png" alt="Person 1" class="w-full h-48 object-contain object-center">
+              <div class="p-5">
+                  <h2 class="text-lg font-semibold text-gray-800 mb-2">John Doe</h2>
+                  <p class="text-sm text-gray-600 mb-4">"I believe in the organization's commitment to innovation and growth. I am thankful for being part of it!"</p>
+                  <button class="text-white bg-blue-500 py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Read More</button>
+              </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img src="assets/person2.png" alt="Person 2" class="w-full h-48 object-contain object-center">
+              <div class="p-5">
+                  <h2 class="text-lg font-semibold text-gray-800 mb-2">Jane Smith</h2>
+                  <p class="text-sm text-gray-600 mb-4">"I appreciate the organization's inclusive culture and focus on employee well-being."</p>
+                  <button class="text-white bg-blue-500 py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Read More</button>
+              </div>
+          </div>
+          
+          <!-- Card 3 -->
+          <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+              <img src="assets/person3.png" alt="Person 3" class="w-full h-48 object-contain object-center">
+              <div class="p-5">
+                  <h2 class="text-lg font-semibold text-gray-800 mb-2">Adam Johnson</h2>
+                  <p class="text-sm text-gray-600 mb-4">"The organization's dedication to social responsibility resonates with my values. I am thankful for being part of it!"</p>
+                  <button class="text-white bg-blue-500 py-2 px-4 rounded hover:bg-blue-600 focus:outline-none focus:bg-blue-600">Read More</button>
+              </div>
+          </div>
+      </div>
+      </section>
+      
+      <!--Our Videos-->
+      <section class="lg:py-[10rem]">
+        <h1 class="text-center font-bold text-5xl text-[#091146]">E-Learning's<span class="text-blue-600"> Videos</span></h1>
+
+        <div class="flex items-center justify-center gap-10 py-[5rem]">
+          <div class="flex flex-col items-center justify-center">
+            <iframe class="" width="500" height="280" src="https://www.youtube.com/embed/viHILXVY_eU?si=UCPG2rqvXhTAedIP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3 class="opacity-65 pt-4">Dec 10, 2023</h3>
+          </div>
+
+          <div class="flex flex-col items-center justify-center">
+            <iframe class="" width="500" height="280" src="https://www.youtube.com/embed/viHILXVY_eU?si=UCPG2rqvXhTAedIP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3 class="opacity-65 pt-4">Dec 10, 2023</h3>
+          </div>
+
+          <div class="flex flex-col items-center justify-center">
+            <iframe class="" width="500" height="280" src="https://www.youtube.com/embed/viHILXVY_eU?si=UCPG2rqvXhTAedIP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3 class="opacity-65 pt-4">Dec 10, 2023</h3>
+          </div>
+        </div>
+        
+
 
       </section>
+
     <script src="index.js"></script>
 </body>
 </html>
