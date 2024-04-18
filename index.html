@@ -22,14 +22,20 @@
         
     </style>
 
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!--Font-Poppins-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
+
 <body style="background-image: url(assets/bg.png); font-family: Poppins; background-repeat: no-repeat; background-position: center; background-size: cover; height: 100vh;">
-    <nav class="bg-white shadow-lg fixed top-0 w-[100%]">
+      
+      <!--NavBar-->
+      <nav class="bg-white shadow-lg fixed top-0 w-[100%]">
         <div class="container mx-auto px-4">
             <div class="flex justify-between items-center py-4">
               
@@ -173,7 +179,6 @@
       </section>
 
 
-
       <!--Messages from our team-->
       <section class="p-10 lg:p-0 flex flex-col items-center justify-center lg:pt-[10rem]">
         <h1 class="pb-[7rem] text-center font-bold text-5xl text-[#091146]"><span class="text-blue-600">Messages</span> From Our Team</h1>
@@ -213,31 +218,102 @@
       </div>
       </section>
       
+      
       <!--Our Videos-->
       <section class="lg:py-[10rem]">
-        <h1 class="text-center font-bold text-5xl text-[#091146]">E-Learning's<span class="text-blue-600"> Videos</span></h1>
-
-        <div class="flex items-center justify-center gap-10 py-[5rem]">
-          <div class="flex flex-col items-center justify-center">
-            <iframe class="" width="500" height="280" src="https://www.youtube.com/embed/viHILXVY_eU?si=UCPG2rqvXhTAedIP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3 class="opacity-65 pt-4">Dec 10, 2023</h3>
-          </div>
-
-          <div class="flex flex-col items-center justify-center">
-            <iframe class="" width="500" height="280" src="https://www.youtube.com/embed/viHILXVY_eU?si=UCPG2rqvXhTAedIP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3 class="opacity-65 pt-4">Dec 10, 2023</h3>
-          </div>
-
-          <div class="flex flex-col items-center justify-center">
-            <iframe class="" width="500" height="280" src="https://www.youtube.com/embed/viHILXVY_eU?si=UCPG2rqvXhTAedIP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            <h3 class="opacity-65 pt-4">Dec 10, 2023</h3>
-          </div>
-        </div>
+        <h1 class="text-center font-bold pb-7 text-5xl text-[#091146]">E-Learning's<span class="text-blue-600"> Videos</span></h1>
         
-
-
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <iframe class="mb-10" width="500" height="250" src="https://www.youtube.com/embed/viHILXVY_eU?si=UCPG2rqvXhTAedIP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe class="mb-10" width="500" height="250" src="https://www.youtube.com/embed/viHILXVY_eU?si=UCPG2rqvXhTAedIP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe class="mb-10" width="500" height="250" src="https://www.youtube.com/embed/viHILXVY_eU?si=UCPG2rqvXhTAedIP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe class="mb-10" width="500" height="250" src="https://www.youtube.com/embed/viHILXVY_eU?si=UCPG2rqvXhTAedIP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe class="mb-10" width="500" height="250" src="https://www.youtube.com/embed/viHILXVY_eU?si=UCPG2rqvXhTAedIP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe class="mb-10" width="500" height="250" src="https://www.youtube.com/embed/viHILXVY_eU?si=UCPG2rqvXhTAedIP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="swiper-slide">
+              <iframe class="mb-10" width="500" height="250" src="https://www.youtube.com/embed/viHILXVY_eU?si=UCPG2rqvXhTAedIP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+  
+      <style>
+        html,
+        body {
+          position: relative;
+          height: 100%;
+        }
+  
+        .swiper {
+          width: 50%;
+          height: 50%;
+        }
+  
+        .swiper-slide {
+          text-align: center;
+          font-size: 18px;
+          background: #fff;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+  
+        .swiper-slide img {
+          display: block;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      </style>
+  
+      
       </section>
 
+      <!--Enroll Now-->
+      <div class="bg-[#091146] h-[350px] w-[100%] text-white flex flex-col justify-center gap-10 items-center text-center">
+        <h1 class="text-3xl font-semibold">Most Students have already enrolled in our online courses</h1>
+        <h3>Believe in your potential, embrace challenges, and persist with passion. Every step you take today brings you closer to the brilliance of your tomorrow.</h3>
+        <button class="px-7 py-3 bg-white text-black" style="border: 1px solid black;">Join Now</button>
+      </div>
+
+      <!--Payment Methods-->
+      <div class="flex flex-col gap-5 items-center justify-center">
+        <h1 class="text-3xl font-bold lg:mt-[7rem]">Our Payment Methods</h1>
+        <h3>You can pay for our online/offline courses with just a few clicks. We accept E-sewa, Khalti and Bank Transfer.</h3>
+        <div class="flex justify-center items-center gap-10">
+          <a href="#">
+            <img src="assets/esewa.png" alt="">
+          </a>
+
+          <a href="#">
+            <img src="assets/khalti.png" alt="">
+          </a>
+
+          <a href="#">
+            <img width="180px" height="250px" src="assets/bank.png" alt="">
+          </a>
+        </div>
+      </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!--Local JS-->
     <script src="index.js"></script>
 </body>
 </html>
